@@ -1,8 +1,8 @@
-from telebot import types
 import emoji
+from telebot import types
 
 
-def create_keyboard(*keys, row_width=3, resize_keyboard=True):
+def create_keyboard(*keys, row_width=4, resize_keyboard=True):
 
     markup = types.ReplyKeyboardMarkup(row_width=row_width, resize_keyboard=resize_keyboard)
     keys = map(emoji.emojize, keys)
